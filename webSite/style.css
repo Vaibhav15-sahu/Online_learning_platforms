@@ -1,0 +1,514 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cosmic , sans-serif ;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.nav{
+    background-color: white;
+    display: flex;
+    z-index: 9;
+    height: 85px;
+    padding: 10px 50px 10px 50px;
+    box-shadow: 0 3px 65px 0 hsla(0, 0%, 0%, 0.3);
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    padding: 8px;
+    height: 65px;
+    width: 170px;
+}
+.nav_side{
+    float: right;
+    margin: 20px 0px 20px 200px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav_side a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.main{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('image/mainImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 81vh;
+}
+.main .main_content h2{
+    font-size: 6vw;
+    padding-top: 315px;
+    padding-left: 13%;
+    padding-right: 13%;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.931);
+}
+.main  .btn{
+    position: relative;
+    text-align: center;
+    margin: 80px;
+}
+.main .btn a{
+    text-decoration: none;
+    padding: 18px 28px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #010c54;
+    border-radius: 10px;
+}
+
+.main .btn a:hover{
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.744);
+}
+
+/*---------------------------- courses ------------------------------------*/
+
+.courses{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.courses h3{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.courses .language , .development{
+    width: 80%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
+
+.courses .card{
+    width: 360px;
+    height: 49vh;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 2px 8px 0px rgb(0 0 0 / 73%);
+}
+
+.courses .card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #00000034;
+}
+
+.courses .card_content h3{
+    font-size: 25px;
+    text-align: start;
+}
+
+.courses .card_content p{
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.courses .card .button a{
+    position: relative;
+    font-size: 25px;
+    float:right;
+    color: #010c54;
+    margin: 40px 10px 0px 0px ;
+}
+
+.seemore{
+    /* background-color: red; */
+    width: 360px;
+    height: 75px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align:center;
+}
+
+.seemore a{
+    font-size: 30px;
+    color: #010c54;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    
+}
+
+/*-------------------------- Ribbon -------------------------- */
+
+.box {
+    width: 200px; height: 300px;
+    position: relative;
+    border: 1px solid #BBB;
+    background: #EEE;
+}
+.ribbon {
+    position: absolute;
+    left: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100px; height: 100px;
+    text-align: right;
+}
+.ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#c90000 0%, #ff6600 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; left: -21px;
+}
+.ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #3830A7;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #3830A7;
+}
+.ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #3830A7;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #3830A7;
+}
+
+  /*--------------------------- keypoints -------------------- */
+  
+.keyPoints{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+h2{
+    font-size: 60px;
+    /* padding-top: 315px; */
+    padding-left: 13%;
+    padding-right: 13%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.keyPoints .keyPoint_box {
+    padding-top: 50px;
+    width: 52%;
+    margin-left: 30px;
+}
+
+.keyPoints .keyPoint_box li{
+    height: 50px;
+    text-align: left;
+    padding: 1%;
+    font-size: 23px;
+    border-left: 5px solid #ff6600;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+.keyPoints .side_img{
+    margin: 50px;
+    padding: 30px;
+    width: auto;
+}
+
+.keyPoints .side_img img{
+    border-radius: 10px;
+}
+
+
+
+/*--------------------------- team views ------------------------------------ */
+
+.team{
+    display: flex ;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+.team h3{
+    text-align: center ;
+    width:  100%;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.team .teamImg{
+    width: 50%;
+}
+.team .teamImg img{
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team .views{
+    position: relative;
+    width: 50%;
+    padding-top: 5px;
+    padding-left: 100px;
+    font-size: 23px;
+    line-height: 50px;
+}
+/* --------------------------- feedback ---------------------- */
+
+.review{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.review h3{
+    text-align: center;
+    width:  100%;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 30px;
+}
+.review .review_container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    border: 2px solid #010c54;
+    border-radius: 10px ;
+}
+
+.review .review_container form{
+    width: 30%;
+    /* background-color: red; */
+}
+
+.input{
+    border: none;
+    display: inline;
+    width: 100%;
+}
+
+input:active{
+    border: none;
+    outline:none;
+}
+
+.b{
+    margin: 30px;
+}
+
+.review .review_container span{
+    font-size: 18px;
+}
+
+.review .review_container .input_box{
+    border-bottom: 2px solid #010c54;
+}
+
+.submit_btn{
+    float: right;
+    margin: 10px;
+}
+
+.submit_btn button{
+    text-decoration: none;
+    padding: 10px 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #010c54;
+    border-radius: 10px;
+}
+
+.submit_btn button:hover{
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.744);
+}
+
+/*---------------------------- footer ----------------------- */
+
+footer{
+    background-color: #99a4a4;
+    padding: 50px;
+    margin: 40px;
+}
+
+footer .pages{
+    text-align: center;
+    margin: 10px;
+}
+footer .pages h3{
+    color: black;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: #1e00ff;
+    font-size: 18px;
+}
+footer .pages a:hover{
+    color: white;
+}
+
+footer .doc{
+    text-align: center;
+    margin: 10px;
+}
+footer .doc h3{
+    color: black;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: #1e00ff;
+    font-size: 18px;
+}
+footer .doc a:hover{
+    color: white;
+}
+
+footer .social{
+    text-align: center;
+    margin: 10px;
+}
+footer .social h3{
+    color: black;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 5px;
+}
+footer .social a{
+    text-decoration: none;
+    margin: 8px;
+    color: #1e00ff;
+    font-size: 24px;
+}
+footer .social a:hover{
+    color: white;
+}
+
+footer .contact{
+    text-align: center;
+    margin: 10px;
+}
+footer .contact h3{
+    color: black;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 5px;
+}
+footer .contact a{
+    text-decoration: none;
+    margin: 8px;
+    color: #1e00ff;
+    font-size: 24px;
+}
+footer .contact a:hover{
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* --------------------------- about-us ---------------------------------- */
+
+.about_us,.our_mission{
+    width: 80%;
+    text-align: center;
+    margin: 10vh;
+    margin-left: 10vw ;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.about_us h3 , .our_mission h3{
+    color: #ff6600;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 30px;
+}
+
+/*-------------------------------- contact ---------------------------------------*/
+
+.contact_main{
+    margin: auto;
+    margin: 100px;
+}
+
+.contact_main .map{
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact_main .details{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 50px;
+    text-align: center;
+}
+
+/*------------------------------- servises  -----------------------------------*/
+
+.service_main{
+    width: 80%;
+    margin: 10%;
+    margin-top: 100px ;
+}
